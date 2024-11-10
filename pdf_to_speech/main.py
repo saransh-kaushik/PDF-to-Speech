@@ -1,4 +1,4 @@
-import tkinter as tk
+import tkinter as tk #importing tkinter for UI
 from tkinter import filedialog, messagebox
 from functions import extract_text_from_pdf, save_text_to_file, text_to_speech
 
