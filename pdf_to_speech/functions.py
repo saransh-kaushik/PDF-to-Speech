@@ -1,7 +1,8 @@
+#file for pdfs and tts functions
 import fitz  # PyMuPDF
 import pyttsx3
 
-def extract_text_from_pdf(pdf_path):
+def extract_text_from_pdf(pdf_path): #extracting text
     document = fitz.open(pdf_path)
     text = ""
 
@@ -17,7 +18,7 @@ def save_text_to_file(text, output_path):
 
 
 
-def text_to_speech(text_path, voice_id=None , rate = 150):
+def text_to_speech(text_path, voice_id=None , rate = 150): #tts
     with open(text_path, "r", encoding="utf-8") as f:
         text = f.read()
 
